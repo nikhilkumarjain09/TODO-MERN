@@ -32,9 +32,11 @@ function ResetPassword() {
         }
     }
     return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-md">
         <div className='text-center'>
             <h1 className='text-xl font-bold p-5'>Reset Password</h1>
-            <form className="w-2/5 mx-auto p-5" onSubmit={handleSubmit}>
+            <form className="w-4/5 mx-auto p-5" onSubmit={handleSubmit}>
                 <input type="password"
                     className="p-3 rounded-md shadow-lg w-full my-4"
                     placeholder="Enter new password"
@@ -67,6 +69,8 @@ function ResetPassword() {
                     </p>
                 </div>
             }
+        </div>
+        </div>
         </div>
     );
 }

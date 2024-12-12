@@ -22,7 +22,6 @@ function App() {
   const [userToken, tokenDispatch] = useReducer(tokenReducer, token)
   const [user, userDispatch] = useReducer(userReducer, {})
   useEffect(() => {
-    console.log("App.js");
     const fetchUser = async () => {
       try {
         console.log("fetchUser");
